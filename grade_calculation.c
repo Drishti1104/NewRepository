@@ -1,33 +1,29 @@
+#include <stdio.h>
 #include<iostream.h>
-#include<stdio.h>
-int marks, total;
-float percentage;
-printf("Enter the marks of the student : ");
-scanf("%d",&marks);
-printf("Enter the total marks : ");
-scanf("%d",&total);
-percentage = (marks/total)*100;
-if(percentage>=90)
+int marks;
+printf("\nEnter the marks of the student : ");
+scanf("%d", &marks);
+if (marks > 0)
 {
-  printf("The student has got A GRADE");
-}
-else if(90<percentage<=75)
-{
-  printf("The student has got B GRADE");
-}
-else if(75<percentage<=60)
-{
-  printf("The student has got C GRADE");
-}
-else if(60<percentage<=45)
-{
-  printf("The student has got D GRADE");
-}
-else if(45<percentage<=30)
-{
-  printf("The student has got E GRADE");
-}
-else
-{
-  printf("The student has failed");
+    switch (marks / 10)
+    {
+      case 10:
+      case 9:
+        printf("\nThe student has got Grade A");
+        break;
+      case 8:
+      case 7:
+        printf("\nThe student has got Grade B");
+        break;
+      case 6:
+      case 5:
+        printf("\nThe student has got Grade C");
+        break;
+      case 4:
+        printf("\nThe student has got Grade D");
+        break;
+      default:
+        printf("\nThe student has failed");
+        break;
+    }
 }
