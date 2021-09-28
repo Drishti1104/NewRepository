@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num1 = 0, num2 = 1, n, sum = 0;
+        System.out.println("Enter the number of elements to be printed in the Fibonacci series : ");
+        n = scan.nextInt();
+        System.out.println("The Fibonacci Series is : ");
+        System.out.println(num1 + "\n" + num2);
+        for (int i = 1; i <= (n - 2); i++) {
+            sum = num1 + num2;
+            System.out.println(sum);
+            num1 = num2;
+            num2 = sum;
+        }
+    }
+}
