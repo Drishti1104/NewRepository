@@ -1,0 +1,66 @@
+*{
+	font-family: EB Garamond;
+}
+
+#menu{
+	background-color: darkgoldenrod;
+	list-style: none;
+	width: 200px;
+	height: 450px;
+}
+
+li a{
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 15px;
+	font-size: xx-large;
+	margin-left: -15px;
+}
+
+li a:hover{
+	color: red;
+}
+
+#info{
+	list-style: none;
+	font-size: large;
+	margin-left: -10px;
+	background-color: lightgoldenrodyellow;
+	width: 300px;
+}
+
+.one{
+	background-color: lightgoldenrodyellow;
+	font-size: 25px;
+	width: 1000px;
+	height: 200px;
+}
+
+img.pic{
+	float: left;
+}
+
+footer{
+	background-color: goldenrod;
+	color: black;
+	padding: 3px;
+	text-align: center;
+	font-size: large;
+}
+
+h2{
+	font-size: xx-large;
+}
+
+#news{
+	background-color: goldenrod;
+	width: 500px;
+	height: 450px;
+	display: block;
+	color: black;
+	padding: 15px;
+	font-size: xx-large;
+	margin-left: -15px;
+	line-height: 1.8;
+}
